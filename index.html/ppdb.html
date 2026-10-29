@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPDB 2027/2028 | SMP Insan Kamil & MA Insan Amanah</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkgreen: { DEFAULT: '#0A2B1D', light: '#13402C', lighter: '#1F5C42' },
+                        gold: { DEFAULT: '#D4AF37', light: '#F3E5AB', dark: '#AA8C2C' }
+                    },
+                    fontFamily: {
+                        playfair: ['"Playfair Display"', 'serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(rgba(10, 43, 29, 0.85), rgba(10, 43, 29, 0.95)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop')",
+                        'pattern-subtle': "url('https://www.transparenttextures.com/patterns/stardust.png')"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F8F9FA; overflow-x: hidden; }
+        h1, h2, h3, h4, h5, h6, .font-serif { font-family: 'Playfair Display', serif; }
+        
+        .text-gradient-gold {
+            background: linear-gradient(to right, #D4AF37, #F3E5AB, #D4AF37);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-size: 200% auto; animation: shine 4s linear infinite;
+        }
+        @keyframes shine { to { background-position: 200% center; } }
+        @keyframes pulse-wa {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .btn-wa-float { animation: pulse-wa 2s infinite; }
+        .premium-card { transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .premium-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(212, 175, 55, 0.15); border-color: #D4AF37; }
+        .premium-input { width: 100%; background-color: transparent; border: none; border-bottom: 2px solid #E5E7EB; padding: 12px 0; color: #0A2B1D; transition: all 0.3s ease; }
+        .premium-input:focus { outline: none; border-bottom-color: #D4AF37; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0A2B1D; }
+        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
+    </style>
+</head>
+<body class="antialiased text-gray-800 selection:bg-gold selection:text-darkgreen relative">
+
+    <a href="https://wa.me/6282313301032" target="_blank" class="btn-wa-float fixed bottom-6 right-6 md:bottom-8 md:right-8 bg-[#25D366] text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition-transform z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-darkgreen/95 backdrop-blur-md shadow-lg py-4 border-b border-gold/30" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex-shrink-0 flex items-center gap-3 md:gap-4" data-aos="fade-right">
+                    <div class="flex flex-col items-center">
+                        <div class="h-10 w-10 md:h-12 md:w-12 flex items-center justify-center rounded-full overflow-hidden shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-transform duration-300 hover:scale-110 border border-gold/30">
+                            <img src="logo-smp.png" alt="Logo SMP" class="h-full w-full object-cover bg-black" onerror="this.src='https://placehold.co/100x100/000000/22c55e?text=SMP'">
+                        </div>
+                        <span class="text-gold text-[8px] font-bold tracking-widest uppercase mt-1 text-center hidden md:block">SMP Islam<br>Insan Kamil</span>
+                    </div>
+                    <div class="h-8 w-px bg-gold/40 hidden md:block"></div>
+                    <div class="flex flex-col items-center">
+                        <div class="h-10 w-10 md:h-12 md:w-12 flex items-center justify-center rounded-full overflow-hidden shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-transform duration-300 hover:scale-110 border border-gold/30 bg-white">
+                            <img src="logo-ma.png" alt="Logo MA" class="h-full w-full object-contain p-1" onerror="this.src='https://placehold.co/100x100/ffffff/22c55e?text=MA'">
+                        </div>
+                        <span class="text-gold text-[8px] font-bold tracking-widest uppercase mt-1 text-center hidden md:block">MA<br>Insan Amanah</span>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex space-x-8 items-center" data-aos="fade-left">
+                    <a href="#hero" class="text-white hover:text-gold transition-colors font-medium text-xs uppercase tracking-wider">Beranda</a>
+                    <a href="#lembaga" class="text-white hover:text-gold transition-colors font-medium text-xs uppercase tracking-wider">Profil</a>
+                    <a href="#akademik" class="text-white hover:text-gold transition-colors font-medium text-xs uppercase tracking-wider">Akademik & Video</a>
+                    <a href="#daftar" class="px-5 py-2 bg-gold text-darkgreen rounded hover:bg-gold-light transition-all duration-300 font-bold text-xs uppercase tracking-wide">Daftar Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative bg-hero-pattern bg-cover bg-center bg-no-repeat bg-fixed min-h-screen flex items-center pt-24 pb-12">
+        <div class="absolute inset-0 bg-pattern-subtle opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col items-center text-center">
+            <div data-aos="fade-down" data-aos-duration="1000" class="inline-block mb-6 px-4 py-1.5 rounded-full border border-gold/50 bg-darkgreen/50 backdrop-blur-sm">
+                <span class="text-gold font-semibold tracking-[0.2em] uppercase text-xs md:text-sm">Penerimaan Peserta Didik Baru 2027/2028</span>
+            </div>
+            
+            <h1 data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="200" class="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold text-white mb-6 leading-tight max-w-4xl">
+                Sinergi Integritas Moral & <br>
+                <span class="text-gradient-gold italic">Transformasi Akademik</span>
+            </h1>
+            
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" class="mt-4 text-base md:text-xl text-gray-300 mb-10 font-light leading-relaxed max-w-2xl">
+                Menyelenggarakan sistem pendidikan integral yang memadukan pendalaman ilmu agama dengan penguasaan sains dan teknologi untuk mencetak lulusan berdaya saing tinggi.
+            </p>
+            
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <a href="#daftar" class="px-8 py-4 bg-gold text-darkgreen font-bold rounded hover:bg-white transition-all text-center uppercase tracking-wide text-sm flex items-center justify-center gap-2"><i class="fas fa-file-signature"></i> Isi Formulir PPDB</a>
+                <a href="brosur-ppdb.pdf" target="_blank" class="px-8 py-4 bg-transparent border-2 border-white text-white font-bold rounded hover:bg-white hover:text-darkgreen transition-all text-center uppercase tracking-wide text-sm flex items-center justify-center gap-2"><i class="fas fa-download"></i> Download Brosur</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sambutan Kyai & Bunyai -->
+    <section class="py-20 bg-white relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
+            <div class="bg-darkgreen rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row items-center border border-gold/30 relative">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-gold/5 rounded-full blur-3xl"></div>
+                
+                <div class="md:w-5/12 p-8 py-12 flex justify-center items-center bg-darkgreen-light/50 h-full">
+                    <div class="flex items-center justify-center">
+                        <div class="w-32 h-32 md:w-44 md:h-44 rounded-full border-4 border-gold overflow-hidden relative z-20 shadow-2xl">
+                            <img src="foto-kyai.jpg" alt="Foto Kyai" class="w-full h-full object-cover bg-darkgreen-light" onerror="this.src='https://placehold.co/400x400/13402C/D4AF37?text=Foto+Kyai'">
+                        </div>
+                        <div class="w-32 h-32 md:w-44 md:h-44 rounded-full border-4 border-gold overflow-hidden relative z-10 -ml-12 md:-ml-16 shadow-2xl">
+                            <img src="foto-bunyai.jpg" alt="Foto Bunyai" class="w-full h-full object-cover bg-darkgreen-light" onerror="this.src='https://placehold.co/400x400/13402C/D4AF37?text=Foto+Bunyai'">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-7/12 p-10 md:p-14 text-white relative z-10">
+                    <i class="fas fa-quote-left text-5xl text-gold/20 absolute top-8 left-8"></i>
+                    <h3 class="text-2xl md:text-3xl font-playfair font-bold text-gold mb-6 relative z-10">Sambutan Pengasuh</h3>
+                    <p class="text-gray-300 leading-relaxed mb-8 relative z-10 text-sm md:text-base">
+                        <span class="italic">"Ahlan wa sahlan. Kami menyambut putra-putri terbaik bangsa untuk bergabung bersama kami. Di SMP Islam Insan Kamil dan MA Insan Amanah, kami tidak hanya mengajarkan ilmu. Kami juga menanamkan adab, membentuk karakter islami, dan menumbuhkan potensi unik setiap anak."</span>
+                        <br><br>
+                        Kami berkomitmen menghadirkan fasilitas premium dan pendidik profesional untuk membimbing para siswa menjadi pemimpin masa depan yang berakhlak mulia dan siap bersaing di tingkat global.
+                    </p>
+                    <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4 pt-6 border-t border-gold/20">
+                        <div>
+                            <h4 class="font-bold text-lg text-white font-playfair">[Nama Lengkap Kyai]</h4>
+                            <p class="text-xs md:text-sm text-gold mt-1">Pengasuh Putra</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-white font-playfair">[Nama Lengkap Bunyai]</h4>
+                            <p class="text-xs md:text-sm text-gold mt-1">Pengasuh Putri</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lembaga Section -->
+    <section id="lembaga" class="py-24 bg-gray-50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                <h4 class="text-gold font-bold uppercase tracking-[0.15em] text-sm mb-3">Profil Pendidikan</h4>
+                <h2 class="text-3xl md:text-5xl font-playfair font-bold text-darkgreen mb-6">Sinergi <span class="italic text-gold">Dua Lembaga</span></h2>
+                <div class="w-20 h-1 bg-gold mx-auto mb-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div data-aos="fade-right" class="premium-card bg-white p-10 rounded-xl border border-gray-200 relative group overflow-hidden shadow-lg">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-16 h-16 bg-darkgreen text-gold rounded-full flex items-center justify-center shadow-lg border-2 border-gold/30">
+                            <i class="fas fa-star-and-crescent text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-playfair font-bold text-darkgreen leading-tight">SMP Islam<br>Insan Kamil</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed mb-6">Menanamkan fondasi aqidah yang lurus, akhlakul karimah, serta kemampuan berpikir kritis sejak dini. Memadukan ilmu syar'i dan sains modern.</p>
+                </div>
+
+                <div data-aos="fade-left" class="premium-card bg-darkgreen p-10 rounded-xl border border-darkgreen-light relative group overflow-hidden shadow-2xl">
+                    <div class="relative z-10">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-gold text-darkgreen rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(212,175,55,0.5)]">
+                                <i class="fas fa-book-open text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-playfair font-bold text-white leading-tight">MA<br>Insan Amanah</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed mb-6">Menyiapkan generasi muda yang matang secara intelektual dan emosional untuk menghadapi tantangan global dan perguruan tinggi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akademik & Cinematic Video Section -->
+    <section id="akademik" class="py-24 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <div data-aos="fade-right" class="relative max-w-sm mx-auto w-full">
+                    <div class="absolute inset-0 bg-gold translate-x-4 translate-y-4 rounded-xl"></div>
+                    <div class="relative bg-white rounded-xl shadow-2xl overflow-hidden border border-gray-200">
+                        <iframe src="https://www.instagram.com/reel/Da4PVr8vCex/embed" class="w-full h-[600px] border-0" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+
+                <div data-aos="fade-left">
+                    <h4 class="text-gold font-bold uppercase tracking-[0.15em] text-sm mb-3">Momen & Pendekatan Belajar</h4>
+                    <h2 class="text-3xl md:text-4xl font-playfair font-bold text-darkgreen mb-6">Cinematik Wisuda & <span class="italic text-gold">Inovasi Kurikulum</span></h2>
+                    
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Saksikan momen haru dan bangga pelepasan siswa-siswi kami. Momen kelulusan ini adalah buah manis dari komitmen kami dalam mengaplikasikan kerangka pembelajaran unggul secara konsisten.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-darkgreen/10 text-darkgreen rounded-lg flex items-center justify-center"><i class="fas fa-project-diagram text-xl"></i></div>
+                            <div>
+                                <h4 class="text-xl font-bold text-darkgreen mb-1">Kurikulum Merdeka (CP & ATP)</h4>
+                                <p class="text-gray-600 text-sm">Penyelarasan modul ajar secara sistematis dari Capaian Pembelajaran (CP) hingga Alur Tujuan Pembelajaran (ATP) untuk menjamin kedalaman materi akademik.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-gold/20 text-gold-dark rounded-lg flex items-center justify-center"><i class="fas fa-comments text-xl"></i></div>
+                            <div>
+                                <h4 class="text-xl font-bold text-darkgreen mb-1">Communicative Language Teaching</h4>
+                                <p class="text-gray-600 text-sm">Program bahasa ditekankan pada metodologi <em>Communicative Language Teaching</em> (CLT) untuk menstimulasi keberanian siswa berinteraksi aktif dalam bahasa global.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps Lokasi -->
+    <section class="py-12 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8" data-aos="fade-up">
+                <h3 class="text-2xl font-playfair font-bold text-darkgreen">Lokasi Pendidikan</h3>
+                <p class="text-gray-500 text-sm mt-2">Dsn. Duran, Desa Karangpuri, Kec. Wonoayu, Kab. Sidoarjo</p>
+            </div>
+            <div class="w-full h-96 rounded-xl overflow-hidden shadow-lg border border-gray-300" data-aos="zoom-in">
+                <iframe src="https://maps.google.com/maps?q=SMP%20Islam%20Insan%20Kamil,%20Karangpuri,%20Wonoayu,%20Sidoarjo&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-darkgreen py-8 border-t border-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-xs font-medium">
+            &copy; 2024 Panitia PPDB Insan Kamil & Insan Amanah. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 100 });
+    </script>
+</body>
+</html>
